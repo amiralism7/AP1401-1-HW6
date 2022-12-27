@@ -19,7 +19,7 @@ title="final" width="300" align="middle" />
 but you have to do it in an iterative way (draw each line one by one) and also put some settings on the screen so that the user can change some of the shape's specifications (like the tickness of the lines, the delay between drawing the lines, number of lines, and ...).
 
 A very simple example of what you should do:
-
+(see `resources/vid.gif` if *following figure* is not loading)
 <p align="center">
 <img src="resources/vid.gif" alt="final"
 title="final" width="500" align="middle" />
