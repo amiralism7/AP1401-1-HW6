@@ -21,6 +21,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void thick_changed();
+    void delay_changed();
+    void num_changed();
     void draw();
     
 

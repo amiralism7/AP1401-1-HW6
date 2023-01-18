@@ -25,6 +25,8 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     connect(ui->lineEdit, &QLineEdit::editingFinished, this, &MainWindow::thick_changed);
+    connect(ui->lineEdit_2, &QLineEdit::editingFinished, this, &MainWindow::delay_changed);
+    connect(ui->lineEdit_3, &QLineEdit::editingFinished, this, &MainWindow::num_changed);
 
     // QPen blackpen{Qt::black};
     // QBrush redbrush{Qt::red};
@@ -44,8 +46,22 @@ MainWindow::~MainWindow()
 
 void MainWindow::thick_changed()
 {
+    thickness = static_cast<short int>(ui->lineEdit->text().toInt());
     draw();
 }
+
+void MainWindow::delay_changed()
+{
+    delay = static_cast<short int>(ui->lineEdit_2->text().toInt());
+    draw();
+}
+
+void MainWindow::num_changed()
+{
+    num_ticks = static_cast<short int>(ui->lineEdit_3->text().toInt());
+    draw();
+}
+
 
 void MainWindow::draw()
 {   
